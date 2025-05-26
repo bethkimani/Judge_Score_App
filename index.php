@@ -1,5 +1,5 @@
 <?php
-require_once '../config/db_connect.php';
+require_once 'config/db_connect.php'; // Updated path (removed '../' since index.php is now in root)
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $judge_id = $_POST['judge_id'];
@@ -23,7 +23,7 @@ $users = $pdo->query("SELECT * FROM users")->fetchAll();
 <html>
 <head>
     <title>Judge Portal</title>
-    <link rel="stylesheet" href="judge.css">
+    <link rel="stylesheet" href="css/judge.css"> <!-- Updated path to CSS file -->
 </head>
 <body>
     <h1>Judge Portal</h1>
