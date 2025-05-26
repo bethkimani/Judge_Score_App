@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /Judge_Score_App/
+
+<FilesMatch "\.(sql|php)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteCond %{REQUEST_URI} !^/css/
+RewriteCond %{REQUEST_URI} !^/js/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/$1 [L]
