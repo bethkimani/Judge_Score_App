@@ -23,7 +23,7 @@ $users = $pdo->query("SELECT * FROM users")->fetchAll();
 <html>
 <head>
     <title>Judge Portal</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="judge.css">
 </head>
 <body>
     <h1>Judge Portal</h1>

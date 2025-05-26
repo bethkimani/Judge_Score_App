@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head>
     <title>Admin Panel - Judge Management</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="admin.css">
 </head>
 <body>
     <h1>Admin Panel - Add Judge</h1>

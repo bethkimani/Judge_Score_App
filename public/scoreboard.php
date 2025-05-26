@@ -14,7 +14,7 @@ $scores = $pdo->query("
 <html>
 <head>
     <title>Public Scoreboard</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="scoreboard.css">
     <script src="../js/scoreboard.js"></script>
 </head>
 <body>

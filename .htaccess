@@ -1,11 +1,15 @@
 RewriteEngine On
 RewriteBase /Judge_Score_App/
 
-<FilesMatch "\.(sql|php)$">
+# Deny direct access to sensitive files (e.g., .sql), but allow PHP files in specific folders
+<FilesMatch "\.(sql)$">
     Order Allow,Deny
     Deny from all
 </FilesMatch>
 
+# Allow access to admin/, judge/, public/, css/, and js/ folders
+RewriteCond %{REQUEST_URI} !^/admin/
+RewriteCond %{REQUEST_URI} !^/judge/
 RewriteCond %{REQUEST_URI} !^/public/
 RewriteCond %{REQUEST_URI} !^/css/
 RewriteCond %{REQUEST_URI} !^/js/

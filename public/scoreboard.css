@@ -1,0 +1,64 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff7ed; /* Light orange background */
+    color: #333;
+}
+
+h1 {
+    color: #c2410c; /* Dark orange for scoreboard */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background-color: #f97316; /* Orange header */
+    color: #fff;
+    font-weight: 600;
+}
+
+td {
+    font-size: 1rem;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.highlight {
+    background-color: #fef08a; /* Yellow highlight for high scores */
+}
+
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
